@@ -50,6 +50,6 @@ def test_name_autor_commit(github_api):
     assert r[0]['commit']['author']['name'] == 'rozdobudo mukola'
 
 @pytest.mark.api
-def test_name_autor_commit(github_api):
+def test_email_autor_commit(github_api):
     r = github_api.list_commits('rozdobudko1Mukola','rozdobudkoQAauto5.0')
     assert r[0]['commit']['author']['email'] == 'rozdobudko.nikolay@gmail.com'
